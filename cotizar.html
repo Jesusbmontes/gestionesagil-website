@@ -64,7 +64,17 @@
         <div class="container">
             <div class="form-layout">
                 <div class="form-wrapper">
-                    <form class="quote-form" onsubmit="submitQuoteForm(event)">
+                    <!-- FORMULARIO ACTUALIZADO CON WEB3FORMS -->
+                    <form class="quote-form" action="https://api.web3forms.com/submit" method="POST">
+                        
+                        <!-- ACCESS KEY - REEMPLAZA ESTE VALOR CON TU CLAVE -->
+                        <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI">
+                        
+                        <!-- Configuración adicional de Web3Forms -->
+                        <input type="hidden" name="subject" value="Nueva Cotización - Gestiones Ágil">
+                        <input type="hidden" name="from_name" value="Gestiones Ágil - Formulario Web">
+                        <input type="hidden" name="redirect" value="https://gestionesagil.com/gracias.html">
+                        
                         <div class="form-section">
                             <h3 class="form-section-title">Datos Personales</h3>
                             
@@ -130,28 +140,28 @@
                             
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="matricula_page">Matrícula *</label>
+                                    <label for="matricula_page">Matrícula</label>
                                     <input type="text" id="matricula_page" name="matricula" placeholder="1234ABC">
                                 </div>
                                 <div class="form-group">
-                                    <label for="fechaCarnet_page">Fecha de Carnet *</label>
+                                    <label for="fechaCarnet_page">Fecha de Carnet</label>
                                     <input type="date" id="fechaCarnet_page" name="fechaCarnet">
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="marcaVehiculo_page">Marca del Vehículo *</label>
+                                    <label for="marcaVehiculo_page">Marca del Vehículo</label>
                                     <input type="text" id="marcaVehiculo_page" name="marcaVehiculo" placeholder="Ej. BMW, Toyota">
                                 </div>
                                 <div class="form-group">
-                                    <label for="modeloVehiculo_page">Modelo del Vehículo *</label>
+                                    <label for="modeloVehiculo_page">Modelo del Vehículo</label>
                                     <input type="text" id="modeloVehiculo_page" name="modeloVehiculo" placeholder="Ej. Serie 3, Corolla">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="anoVehiculo_page">Año del Vehículo *</label>
+                                <label for="anoVehiculo_page">Año del Vehículo</label>
                                 <input type="number" id="anoVehiculo_page" name="anoVehiculo" placeholder="2024" min="1900" max="2099">
                             </div>
                         </div>
