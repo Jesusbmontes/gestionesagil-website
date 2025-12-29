@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Gracias! - Gestiones Ágil</title>
+    <meta name="description" content="Hemos recibido tu solicitud - Gestiones Ágil">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo" aria-label="Ir a inicio">
+                <svg class="logo-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Logo Gestiones Ágil</title>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                <h1 class="logo-text">Gestiones Ágil</h1>
+            </a>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="mainNav" aria-label="Principal">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="cotizar.html">Cotizador</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <a href="tel:+34611342470" class="btn btn-primary header-call" aria-label="Llamar ahora">
+                <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Icono teléfono</title>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span>Llamar Ahora</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <section class="section bg-white" style="min-height: 70vh; display: flex; align-items: center; padding: 80px 0;">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                
+                <!-- Icono de Éxito -->
+                <div style="width: 120px; height: 120px; background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 32px; box-shadow: var(--shadow-lg); animation: successPulse 2s ease-in-out infinite;">
+                    <svg style="width: 64px; height: 64px; color: #fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+
+                <!-- Título -->
+                <h2 class="section-title" style="margin-bottom: 20px;">¡Solicitud Recibida!</h2>
+                
+                <!-- Mensaje Principal -->
+                <p class="text-content" style="font-size: 1.15rem; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Gracias por confiar en <strong>Gestiones Ágil</strong>. Hemos recibido tu solicitud de cotización y nuestro equipo la está revisando.
+                </p>
+
+                <!-- Información de Próximos Pasos -->
+                <div style="background: var(--primary-blue-light); border-radius: 16px; padding: 32px; margin-bottom: 40px; border: 2px solid rgba(0, 102, 204, 0.2);">
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--primary-blue); margin-bottom: 20px;">
+                        ¿Qué sigue ahora?
+                    </h3>
+                    
+                    <div style="display: grid; gap: 16px; text-align: left;">
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--primary-blue); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">1</div>
+                            <div>
+                                <h4 style="font-weight: 600; color: var(--text-dark); margin-bottom: 4px;">Análisis de tu solicitud</h4>
+                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem;">Revisaremos tu información en detalle.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--primary-blue); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">2</div>
+                            <div>
+                                <h4 style="font-weight: 600; color: var(--text-dark); margin-bottom: 4px;">Comparación de opciones</h4>
+                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem;">Buscaremos las mejores ofertas entre nuestras aseguradoras.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--primary-blue); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">3</div>
+                            <div>
+                                <h4 style="font-weight: 600; color: var(--text-dark); margin-bottom: 4px;">Te contactaremos pronto</h4>
+                                <p style="color: var(--text-light); margin: 0; font-size: 0.95rem;">Recibirás tu propuesta personalizada en <strong>menos de 24 horas</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Información de Contacto Directo -->
+                <div style="background: #fff; border: 2px solid var(--primary-blue-light); border-radius: 16px; padding: 28px; margin-bottom: 40px;">
+                    <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--text-dark); margin-bottom: 16px;">
+                        ¿Necesitas hablar con nosotros ahora?
+                    </h3>
+                    <p style="color: var(--text-light); margin-bottom: 24px; font-size: 0.95rem;">
+                        Si prefieres una respuesta inmediata, contáctanos directamente:
+                    </p>
+                    
+                    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                        <a href="tel:+34611342470" class="btn btn-gradient">
+                            📞 Llamar Ahora
+                        </a>
+                        <a href="https://wa.me/34611342470" class="btn btn-outline">
+                            💬 WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Botones de Navegación -->
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <a href="index.html" class="btn btn-large btn-outline">
+                        Volver al Inicio
+                    </a>
+                    <a href="servicios.html" class="btn btn-large btn-outline">
+                        Ver Servicios
+                    </a>
+                </div>
+
+                <!-- Nota Final -->
+                <p style="margin-top: 40px; color: var(--text-light); font-size: 0.9rem;">
+                    También recibirás un correo de confirmación con los detalles de tu solicitud.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <span class="footer-brand">Gestiones Ágil</span>
+                </div>
+                <p>Tu asesor de confianza para todo tipo de seguros.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📞 +34 611 342 470</p>
+                <p>✉️ info@gestionesagil.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Horario</h4>
+                <p>Lunes - Viernes: 9:00 - 18:00</p>
+                <p>Sábados: 10:00 - 14:00</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <p><a href="terminos.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Términos de Servicio</a></p>
+                <p><a href="privacidad.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Política de Privacidad</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gestiones Ágil. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp floating button -->
+    <a class="whatsapp-fab" href="https://wa.me/34611342470" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.243 1.405 1.409-5.234-0.321-0.525c-1.332-2.197-2.035-4.707-2.035-7.283 0-7.72 6.28-14 14-14s14 6.28 14 14-6.28 14-14 14zM23.407 19.99c-0.422-0.211-2.496-1.232-2.883-1.372-0.385-0.141-0.665-0.211-0.946 0.21s-1.088 1.372-1.334 1.653c-0.245 0.281-0.491 0.316-0.913 0.105s-1.78-0.656-3.388-2.091c-1.253-1.117-2.1-2.496-2.345-2.918s-0.026-0.649 0.185-0.859c0.189-0.189 0.422-0.491 0.633-0.737s0.281-0.422 0.422-0.702c0.14-0.281 0.070-0.526-0.035-0.737s-0.946-2.278-1.297-3.122c-0.341-0.821-0.687-0.71-0.946-0.723-0.245-0.012-0.526-0.015-0.807-0.015s-0.737 0.105-1.123 0.526c-0.386 0.422-1.476 1.443-1.476 3.520s1.511 4.083 1.722 4.364c0.211 0.281 2.98 4.549 7.217 6.38 1.008 0.435 1.795 0.696 2.409 0.891 1.018 0.326 1.945 0.28 2.678 0.17 0.817-0.122 2.496-1.021 2.848-2.007s0.351-1.832 0.246-2.007c-0.105-0.176-0.386-0.281-0.807-0.491z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+
+    <style>
+        @keyframes successPulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 8px 24px rgba(0,102,204,0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 12px 32px rgba(0,102,204,0.4);
+            }
+        }
+    </style>
+
+</body>
+</html>
