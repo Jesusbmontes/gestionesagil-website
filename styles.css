@@ -30,7 +30,7 @@ body{
 
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 
-/* ====== HEADER ====== */
+/* ====== HEADER - CORREGIDO ====== */
 .header{
     position:sticky;
     top:0;
@@ -50,7 +50,7 @@ body{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:60px;
+    gap:24px; /* CORREGIDO: Reducido de 60px a 24px */
 }
 
 /* Mobile Menu Toggle */
@@ -77,13 +77,14 @@ body{
 .mobile-menu-toggle.active span:nth-child(2){ opacity: 0; }
 .mobile-menu-toggle.active span:nth-child(3){ transform: rotate(-45deg) translate(5px, -6px); }
 
-/* ====== LOGO ====== */
+/* ====== LOGO - CORREGIDO ====== */
 .logo{
     display:flex;
     align-items:center;
     text-decoration:none;
     cursor:pointer;
     flex-shrink:0;
+    width:110px; /* AÑADIDO: Ancho fijo para mejor control */
 }
 
 .logo-image {
@@ -99,14 +100,15 @@ body{
     display:none;
 }
 
-/* ====== NAV ====== */
+/* ====== NAV - CORREGIDO ====== */
 .nav{
     display:flex;
     gap:30px;
     align-items:center;
     flex:1;
     justify-content:center;
-    margin-left:-110px;
+    margin-left:0; /* CORREGIDO: Eliminado margen negativo */
+    padding:0 20px; /* AÑADIDO: Padding para mejor espaciado */
 }
 
 .nav a{
@@ -1494,12 +1496,13 @@ section.bg-gradient{background:var(--bg-gray)}
 
     .nav{
         gap:16px;
+        padding:0 15px; /* AJUSTADO: Reducido padding en tablet */
     }
 }
 
 @media (max-width:880px){
     .header-content{
-        gap:16px;
+        gap:16px; /* AJUSTADO: Menor gap en móvil */
     }
 
     .header{
@@ -1512,6 +1515,10 @@ section.bg-gradient{background:var(--bg-gray)}
     }
 
     /* Logo responsive tablet/móvil */
+    .logo{
+        width:120px; /* AJUSTADO: Ligeramente más grande en tablet */
+    }
+    
     .logo-image {
         width: 120px;
         height: 51px;
@@ -1519,7 +1526,7 @@ section.bg-gradient{background:var(--bg-gray)}
 
     .nav{
         position:fixed;
-        top:72px;
+        top:100%;
         left:0;
         right:0;
         background:#fff;
@@ -1631,13 +1638,17 @@ section.bg-gradient{background:var(--bg-gray)}
     }
 
     /* Logo móviles pequeños */
+    .logo{
+        width:100px; /* AJUSTADO: Más compacto en móvil pequeño */
+    }
+    
     .logo-image {
         width: 100px;
         height: 43px;
     }
 
     .header-content{
-        gap:8px;
+        gap:8px; /* AJUSTADO: Gap mínimo en móvil pequeño */
     }
 
     .header{
@@ -1649,7 +1660,7 @@ section.bg-gradient{background:var(--bg-gray)}
     }
 
     .nav{
-        top:60px;
+        top:100%;
     }
 
     .header-call span{
