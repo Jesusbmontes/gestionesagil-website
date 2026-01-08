@@ -33,7 +33,7 @@ body{
 
 /* ====== HEADER - CORREGIDO ====== */
 .header{
-    position:sticky;
+    position:fixed;
     top:0;
     z-index:100;
     background:var(--bg-light);
@@ -1792,4 +1792,5 @@ section.bg-gradient{background:var(--bg-gray)}
         }
     }
 }
+
 
